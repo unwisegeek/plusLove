@@ -1,0 +1,35 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "header header header" "ynAPI jokeAPI picklineAPI" "ynAPI jokeAPI picklineAPI";
+}
+.header { grid-area: header; }
+.ynAPI { grid-area: ynAPI; }
+.jokeAPI { grid-area: jokeAPI; }
+.picklineAPI { grid-area: picklineAPI; }
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+    height: 30vh;
+}
+
+.ynAPI {
+    grid-area: ynAPI;
+    background-color:antiquewhite;
+    height: 70vh;
+}
+
+.jokeAPI {
+    grid-area: jokeAPI;
+    background-color: white;
+    height: 70vh;
+}
+
+.picklineAPI {
+    grid-area: picklineAPI;
+    background-color: red;
+    height: 70vh;
+}

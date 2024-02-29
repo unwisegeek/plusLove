@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+
+
+    <meta charset="utf-8">
+    <meta name="description" content="In a post-pandedmic world, we hope to increase your chances of obtaining the 'Dating Achievement'. Roll our buffs for a better chance in Love, Luck and Charisma. An API project created by computer programming students, using 2 open-source APIs and our student-made 'Pick Up Line Generator' API.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;700&display=swap" rel="stylesheet">
+
+    <title>plus Love</title>
+
+
+    <style type="text/css">
+        /* IDs here */
+
+        #outer {
+            display: flex;
+            flex-flow: column;
+            height: 100%;
+        }
+
+        #inner_fixed {
+        }
+
+        #inner_remaining {
+            flex-grow: 1;
+        }
+
+        #logo {
+            border-radius: 50%;
+            min-width: 5%;
+            max-width: 10%;
+            height: auto;
+            position: absolute;
+            float: left;
+            clear: left;
+        }
+
+        #subhead {
+            font-size: 2em;
+            margin-top: 0px;
+        }
+
+        #jokeSetup {
+            font-style: italic;
+        }
+
+        #jokePunchline {
+            font-style: italic;
+        }
+
+        #pickUpLine1 {
+            font-style: italic;
+        }
+
+        #pickUpLine2 {
+            font-style: italic;
+        }
+
+        /* Classes here */
+        .header {
+            text-align: center;
+            color: #e4a5c4;
+            font-weight: 700;
+        }
+
+        /* Elements here */
+        body {
+            background-color: #e4a5c4;
+            font-family: 'Cormorant Upright', serif;
+            margin-top: 0px;
+        }
+
+        blockquote {
+            display: block;
+            border-width: 2px 0;
+            border-style: solid;
+            border-color: #863c61;
+            padding: 1.5em 0 0.5em;
+            margin: 1.5em 0;
+            position: relative;
+        }
+
+            blockquote:before {
+                content: '\201C';
+                position: absolute;
+                top: 0em;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #e4a5c4;
+                width: 3rem;
+                height: 2rem;
+                font: 6em/1.08em 'PT Sans', sans-serif;
+                color: #666;
+                text-align: center;
+            }
+
+            blockquote:after {
+                content: "\2013 \2003" attr(cite);
+                display: block;
+                text-align: right;
+                font-size: 0.875em;
+                color: #666;
+            }
+
+        button {
+            background-color: #863c61;
+            border-color: #692d4b;
+            color: #fd0e96;
+            float: center;
+            position: center;
+            padding-left: 10%;
+        }
+
+            button:hover {
+                background-color: #863c61;
+                border-color: #ffe88c;
+                border-width: 3px;
+                color: #fd0e96;
+            }
+
+        /* For API Generation Buttons, Responsive Design is controlled here */
+        div.generatorButton {
+            border: 1px solid #863c61;
+        }
+
+            div.generatorButton:hover {
+                animation-name: notice;
+                animation-duration: 500ms;
+                animation-fill-mode: forwards;
+            }
+
+        @keyframes notice {
+            100% {
+                border: 5px solid #ffe88c;
+                font-weight: 700;
+            }
+        }
+
+        div.generatorButton img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.description {
+            padding: 15px;
+            text-align: center;
+            background-color: #e4a5c4;
+            color: #4b2d3c;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .overlay {
+            position: absolute;
+            background-color: #692d4b;
+            overflow: hidden;
+            width: auto;
+            height: 0;
+            transition: .5s ease;
+        }
+
+        .container:hover .overlay {
+            height: 100%;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 32.99999%;
+        }
+
+        .text {
+            white-space: nowrap;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* End Responsive generatorButton */
+
+        footer {
+            background-color: #692d4b;
+            color: #e4a5c4;
+            text-align: center;
+            clear: both;
+        }
+
+        header {
+            background-color: #863c61;
+            color: #ff99d7;
+            clear: both;
+            margin-top: 1px;
+            padding: 0px;
+        }
+
+        h1 {
+            font-size: 8em;
+            line-height: .9em;
+            margin-bottom: 0px;
+        }
+
+        /* Playing with padding
+        main {
+            padding: (2, 2, 2, 2);
+        }
+        End Comment */
+    </style>
+
+
+</head>
+
+<body>
+    <div id="outer">
+
+        <div id="inner_fixed">
+            <header>
+                <img id="logo" src="https://user-images.githubusercontent.com/22180222/107176924-932ed000-699e-11eb-88e4-7055effb12c4.png" alt="Plus Love logo, a buff for romance">
+                <!-- Possible Headings: "Create Some Sparks" "Connect these Circuits" "Dating Achievements: Cheats and WalkThroughs" -->
+                <h1 class="header">plus Love</h1>
+                <p class="header" id="subhead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a buff for romance</p>
+                <nav></nav>
+            </header>
+        </div>
+
+        <div id="inner_remaining">
+
+            <main>
+                <!-- First Button - Ask the Oracle, YES/NO API Generator -->
+                <div class="responsive">
+                    <div class="generatorButton">
+                        <div class="container">
+                            <img src="https://user-images.githubusercontent.com/22180222/108027685-95c1a300-6ff8-11eb-92a7-6870c725f5dc.png" alt="plus Luck, Ask the Oracle and Generate a Yes, No or Maybe/Unclear" width="32.99%" height="auto">
+                        </div>
+                        <div id="YESorNO" class="description">
+                            <blockquote cite="Alice Hoffman">Dreams came to men for many reasons, both as oracles and as warnings.</blockquote>
+                            Your burning query answered!
+                            <br><br>
+                            Declare your inquiry and receive a Yes, No, Maybe or Unclear response.
+                            <br>
+                            Boost your Luck and Click below to Ask the Oracle!
+                            <br><br>
+                            <center>
+                                <div id="TextYesNo">
+
+                                </div>
+                                <br><br><br>
+                                <button type="button" id="YNbtn">
+                                    <img src="https://user-images.githubusercontent.com/22180222/108027718-9f4b0b00-6ff8-11eb-8a6d-d92e500c17b2.png" alt="Ask the Oracle, Click Here for Your Answer">
+                                </button>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Button - Gimme a Line, (Possible) Pick Up Line API Generator -->
+                <div class="responsive">
+                    <div class="generatorButton">
+                        <a target="_blank" href="">
+                            <div class="container">
+                                <img src="https://user-images.githubusercontent.com/22180222/108027616-7f1b4c00-6ff8-11eb-97d1-86c9837c04b2.png" alt="Generate a Random Pick Up Line" width="32.99%" height="auto">
+                                <div class="overlay">
+                                    <div class="text">Feeling Lucky? Generate A Pick Up Line</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="description">
+                            Need to connect a circuit with this person?
+                            <br>
+                            Click the Generator Above to get a pick up line and make that spark happen!
+                            <br>
+                            <!--IMPORTANT PART - Please Change from "pickUpLine" to your code && Change ID in style to match for styling (italics)-->
+                            <div id="pickUpLine1" class="description">
+                                <i>Every once and a while two numbers meet, link, and become forever binary.</i>
+                                <br>
+                            </div>
+
+                            <!--IMPORTANT PART - Please Change from "pickUpLine" to your code-->
+                            <div id="pickUpLine2" class="description">
+                                Need another Pick Up Line?
+                                <br>
+                            </div>
+                            <button type="button" id="pickUpLineButton" autofocus="autofocus"><img src="https://user-images.githubusercontent.com/22180222/108027601-76c31100-6ff8-11eb-87d2-c918bf8614f5.png" alt="I'm Feelin' Lucky, Click here to generate a new pick up line"</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Button - Roll for Laughs, Joke API Generator -->
+                <div class="responsive">
+                    <div class="generatorButton">
+                        <a target="_blank" href="">
+                            <div class="container">
+                                <img src="https://user-images.githubusercontent.com/22180222/108027544-5b580600-6ff8-11eb-9930-3e43678066d0.png" alt="plus Charisma buff, Click Roll for Laughs to Generate a Joke" width="600" height="400">
+                                <div class="overlay">
+                                    <div class="text">Roll for Laughs to Generate A Joke</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="description">
+                            Need another wisecrack to get the convo rolling?
+                            <br>
+                            Boost your Charisma and Click Roll for Laughs.
+                            <br><br>
+
+                            <!--IMPORTANT PART-->
+                            <div id="jokeSetup" class="description">
+                                <i>Stop making me so interested in you...I'm trying to act aloof so you think I'm cool.</i>
+                            </div>
+
+                            <div id="jokePunchline" class="description">
+                                <i>The Internet: where men are men, women are men, and children are the FBI.</i>
+                            </div>
+
+                            <button type="button" id="jokeButton"><img src="https://user-images.githubusercontent.com/22180222/108027573-6874f500-6ff8-11eb-962b-176a03f35a84.png" alt="Roll For Laughs, Click Here to Generate a Joke"</button>
+
+                        </div>
+
+
+                        <div class="clearfix"></div>
+
+
+                        <!--Extra Content Space - if there's time/input -->
+                        <!-- Start Hidden Below
+                <article>
+                <h2>Next Step - Romance!</h2>
+                <p>The pick up line worked and you've scored the date! **Victory Dance!**
+                <br><br>
+                Now what?
+                </p>
+                <ul>
+                <li>Bring Flowers</li>
+                <li></li>
+                </ul>
+                </article>
+                End Hidden Above-->
+
+            </main>
+
+            <footer>
+                <small>
+                    This project was made for educational purposes. Any resources used were not in the intention of copyright infringement. The content in this project does not reflect the views, opinions nor actions of our club nor institution. Please contact us if you have any questions, comments or concerns.
+                    <br>
+                    <!-- Should we Add Our Names?-->
+                </small>
+            </footer>
+        </div>
+        
+
+    </div>
+
+   
+    <script src="newScript.js"></script>
+</body>
+</html>
