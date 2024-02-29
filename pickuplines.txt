@@ -2,7 +2,7 @@
 A life without you, would be like a computer without an OS.
 Anonymity makes me even more handsome.
 Are you a computer keyboard? Because you're my type.
-Are you a computer whiz… it seems you know how to turn my software to hardware.
+Are you a computer whiz... it seems you know how to turn my software to hardware.
 Are you a double? The thought of you always floats inside my head.
 Are you an angel, because your texture mapping is divine!
 Are you an exception?Let me catch you.
@@ -25,11 +25,11 @@ Before you, I was a PC without a power outlet.
 Can I stick my USB drive in your USB port?
 Can you be my ActionListener? That way you notice everything that I do.
 Can you be my private variable? I want to be the only one with access to you.
-Come to my 127.0.0.1 and I’ll give you sudo access.
+Come to my 127.0.0.1 and I'll give you sudo access.
 Computer techs have skilled fingers if you know what I mean.
 Could I borrow your smartphone? I need to post a Facebook status update that I've met the woman of my dreams, in order to make all the ex-girlfriends I'm still Facebook friends with jealous.
 Could I have your I.P.?
-Do u like me? Text '1′ for 'Yes,' '2′ for 'No.
+Do u like me? Text '1? for 'Yes,' '2? for 'No.
 Do you think we can make it a step more serious and disable network sharing?
 Don't worry honey, they call it my dual-channel RAM.
 Don't worry, the first couple of times it's always Abort, Retry, Fail.
@@ -98,7 +98,7 @@ Is your name Google? Because you have everything I've been searching for.
 Is your name Wi-fi? Because I'm really feeling a connection.
 Is your network encrypted? Im looking to hack.
 Isn't your e-mail address beautifulgirl@mydreams.com?
-Let me be the 'throws Exception’ to your 'public static void main (String[] args)’. I will accept whatever you give me.
+Let me be the 'throws Exception' to your 'public static void main (String[] args)'. I will accept whatever you give me.
 Let's interface our hardware.
 Let's just cut to the chase, I wanna hotsync your PDA.
 Living with you would be like living in a virtual reality.
@@ -106,10 +106,10 @@ Mind if I run a sniffer to see if your ports are open?
 Most people say women are NP-complete, but if I get you into bed, I can solve you in polynomial time!
 My 'up-time' is better than BSD.
 My attraction for you is stronger than the magnetic forces inside of my hard disk.
-My love for you cannot be measured with an int, not with a long, and not even with an array. It is out of bounds and infinite….
+My love for you cannot be measured with an int, not with a long, and not even with an array. It is out of bounds and infinite....
 My love for you comes with no strings attached.
 My love for you is a constant variable: unupdatable and unchangeable.
-My love is a for loop without the increment operator— infinitive, non-terminating, and difficult to stop once it starts running.
+My love is a for loop without the increment operator -- infinitive, non-terminating, and difficult to stop once it starts running.
 My main method is 'public love iLoveYou().'
 My name is #####, and I speak Klingon.
 My servers never go down... but I do!
@@ -168,7 +168,7 @@ You have nice syntax.
 You look familiar. What's your Twitter handle? I think I follow you.
 You make me want to calibrate my joystick without the latest drivers
 You make my software turn into hardware!
-You must be tired because you've been streaming through my RSS feed all day…
+You must be tired because you've been streaming through my RSS feed all day...
 You must be Windows 95 because you have me so unstable.
 You put the SPARC in my workstation.
 You still use Internet Explorer? You must like it nice and slow.
@@ -244,18 +244,18 @@ You're hotter than a Bunsen burner set to full power!
 You're like the top of an AMD Athlon.. very hot.
 Your 127.0.0.1 or mine
 Your body has the nicest arc length I've ever seen.
-Baby you’re more precious than an artifact!
-Baby, I’ve got a huge grant !
+Baby you're more precious than an artifact!
+Baby, I've got a huge grant !
 Baby, you make this Homo erectus.
 Come here and let me demonstrate how to shovel probe.
-Did it hurt when you fell from your culture’s dogmatic view of an afterlife?
+Did it hurt when you fell from your culture's dogmatic view of an afterlife?
 Hey baby, can I survey your features?
 I like my women like I like my DNA helicase - unzipping my genes.
-I find your culture fascinating…I’d like to learn more about your mating rituals.
+I find your culture fascinating...I'd like to learn more about your mating rituals.
 I like your hotspot.
 I sure would like to calibrate your curves.
 I would never bury our love in a coniferous forest, because the acidity of the soil would ruin any chance of preservation.
 I'll make your plumb bob!
-I’m a linguistic anthropologist, may i study your tongue?
+I'm a linguistic anthropologist, may i study your tongue?
 You like petrology? Well, check out this cleavage!
 Your beauty is more striking than the preservation of Otzi the Iceman!
