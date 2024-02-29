@@ -1,23 +1,12 @@
 import flask
 from random import randint
-from flask import request, jsonify
+from flask import jsonify, request, Response
 from flask_wtf import CSRFProtect
 
 app = flask.Flask(__name__)
 app.secret_key = b'_53oi3uriq9pifpff;apl'
 csrf = CSRFProtect(app) 
 app.config["DEBUG"] = True
-
-pickupLines= [
-    {
-       "pickupLine": "You are cute!"
-    }
-   
-]
-
-
-
-
 
 #def populateAPI():
 #     i = 0
@@ -30,21 +19,20 @@ pickupLines= [
 #     file.close()
 
 def populateAPI():
-    pickupLines = open("pickuplines.txt", "r").readlines()
-    return pickupLines
+    return open("pickuplines.txt", "r").readlines()
 
 @app.route('/', methods=['GET'])
 def home():
-    return "sjfdhsfhjskd"
-
-
+    return Response(status=404)
 
 
 @app.route('/randomQuote' ,  methods=['GET'])
 def getRandomQuote():
-    linelist = populateAPI()
-    randomNumber = randint(0, len(linelist) - 1)
-    response = flask.jsonify({ "pickupLine": linelist[randomNumber] })
+    # linelist = populateAPI()
+    # response = flask.jsonify({ "pickupLine": linelist[randint(0, len(linelist) - 1] })
+    # The above lines are for when you start adding to pickuplines.txt
+    # The below line is an example of how you can get Python to do as much as possible
+    response = flask.jsonify({ "pickupLine": f"{ populateAPI()[randint(0, len(populateAPI()) - 1)] }" })
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
